@@ -22,7 +22,7 @@ server:
 spring:
   profiles: beta
   application:
-      name: microconfig-test-client
+      name: microconfig-beta-client
 
 eureka:
  client:
