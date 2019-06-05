@@ -1,11 +1,15 @@
-server:
-  port: 7101
 spring:
+   profiles:
+      active:
+      - dev
+---
+spring:
+  profiles: dev
   application:
-    name: microcloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/seekpan/learngit.git
+      name: microconfig-test-dev
+---
+spring:
+ profiles: default
+ application:
+      name: microconfig-test-default
 
